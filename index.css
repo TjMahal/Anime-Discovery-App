@@ -82,3 +82,30 @@ footer {
     padding: 20px;
     color: white;
 }
+
+
+/* Anime cards */
+.anime-card {
+    background-color: #2d2d45;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.anime-card img {
+    width: 100%;
+    max-width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    background-color: #151521;
+}
+
+.anime-card h3 {
+    color: #c4b5fd;
+    font-size: 16px;
+    margin-top: 12px;
+}
