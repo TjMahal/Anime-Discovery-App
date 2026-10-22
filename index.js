@@ -64,3 +64,42 @@ async function searchAnime(animeName) {
         console.error(error);
     }
 }
+const suggestionForm = document.getElementById("suggestion-form");
+const suggestionName = document.getElementById("suggestion-name");
+const suggestionMessage = document.getElementById("suggestion-message");
+
+suggestionForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+    const animeName = suggestionName.value.trim();
+    if (animeName === "") {
+        suggestionMessage.textContent = "Please enter an anime name.";
+        return;
+    }
+    suggestionMessage.textContent = "Sending suggestion...";
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                anime: animeName
+            })
+        });
+        if (!response.ok) {
+            throw new Error("Could not send suggestion.");
+        }
+        const result = await response.json();
+        suggestionMessage.textContent =
+            "Suggestion sent successfully! ID: " + result.id;
+        suggestionForm.reset();
+    } catch (error) {
+        suggestionMessage.textContent =
+            "Could not send your suggestion. Please try again.";
+        console.error(error);
+    }
+});
+
+suggestionForm.addEventListener("input", function () {
+    suggestionMessage.textContent = "";
+});
