@@ -107,3 +107,21 @@ footer {
     font-size: 16px;
     margin-top: 12px;
 }
+
+.anime-card p {
+    color: #ccccdd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.anime-card p:last-child {
+    text-align: left;
+}
+
+.anime-card {
+    transition: transform 0.2s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+}
