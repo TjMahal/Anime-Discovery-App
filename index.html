@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Discovery App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Anime Discovery</h1>
+        <p>Discover your next favourite anime!</p>
+    </header>
+    <main>
+        <section id="search-section">
+            <h2>Find Anime</h2>
+            <form id="search-form">
+                <input
+                    type="text"
+                    id = "anime-search"
+                    placeholder="Enter an anime name..."
+                    required
+                >
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="anime-results">
+            <h2>Anime Results</h2>
+            <div id="anime-list"></div>
+        </section>
+        <section id="suggestion-section">
+            <h2>Suggest an Anime</h2>
+            <p>Tell us which anime you'd like us to feature.</p>
+            <form id="suggestion-form">
+                <input
+                    type="text"
+                    id = "suggestion-name"
+                    placeholder="Anime name"
+                    required
+                >
+                <button type="submit">Send Suggestion</button>
+            </form>
+            <p id="suggestion-message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Anime Discovery App | Built by Taj Wangai</p>
+    </footer>
+ <script src="index.js"></script>
+</body>
+</html>
