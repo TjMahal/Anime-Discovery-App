@@ -34,14 +34,16 @@ async function searchAnime(animeName) {
         }
         
         result.data.forEach(function(anime) {
-    // Create a card for each anime
     const animeCard = document.createElement("div");
     animeCard.classList.add("anime-card");
 
-    // Create the anime poster
     const animeImage = document.createElement("img");
     animeImage.src = anime.attributes.posterImage?.small || "";
     animeImage.alt = anime.attributes.canonicalTitle;
+    const animeRating = document.createElement("p");
+    animeRating.textContent = "Rating: " + (anime.attributes.averageRating || "Not available");
+    const animeDescription = document.createElement("p");
+    animeDescription.textContent = anime.attributes.synopsis || "No description available.";
     animeImage.loading = "eager";
     animeImage.onerror = function () {
         this.style.display = "none";
@@ -52,7 +54,8 @@ async function searchAnime(animeName) {
 
     animeCard.appendChild(animeImage);
     animeCard.appendChild(animeTitle);
-
+    animeCard.appendChild(animeRating);
+    animeCard.appendChild(animeDescription);
     animeList.appendChild(animeCard);
 });
     } catch (error) {
