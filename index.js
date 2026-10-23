@@ -132,10 +132,13 @@ async function loadSavedAnime() {
         savedAnime.forEach(function(anime) {
             const card = document.createElement("div");
             card.classList.add("anime-card");
+
             const title = document.createElement("h3");
             title.textContent = anime.title;
+
             const rating = document.createElement("p");
             rating.textContent = "Rating: " + anime.rating;
+            
             card.appendChild(title);
             card.appendChild(rating);
             savedAnimeList.appendChild(card);
