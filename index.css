@@ -215,15 +215,15 @@ header h1 {
     line-height: 1.5;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+    --webkit-line-clamp: 4;
+    --webkit-box-orient: vertical;
 }
 
 .anime-description.expanded {
-    display: block
+    display: block;
     overflow: visible;
     max-height: none;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: initial;
+    --webkit-line-clamp: 4;
+    --webkit-box-orient: initial;
     
 }
