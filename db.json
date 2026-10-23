@@ -27,6 +27,13 @@
       "rating": "Not available",
       "synopsis": "Commemorative recap of One Punch Man 2nd Season.",
       "id": "6NH3sGXtuOM"
+    },
+    {
+      "title": "Go! Saitama",
+      "image": "https://media.kitsu.app/anime/45238/poster_image/small-ac7a8841c1f64f5cbd27b0289ba678d8.jpeg",
+      "rating": "75.43",
+      "synopsis": "The short follows Saitama after he discovers a 1-yen (about US$0.01) sale for high-grade hot-pot meat — but the sale ends at 5:00 p.m. that day.\n\n(Source: Anime News Network)",
+      "id": "1DhGGfLdukA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

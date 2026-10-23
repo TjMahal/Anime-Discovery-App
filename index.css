@@ -215,15 +215,35 @@ header h1 {
     line-height: 1.5;
     overflow: hidden;
     display: -webkit-box;
-    --webkit-line-clamp: 4;
-    --webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 .anime-description.expanded {
     display: block;
     overflow: visible;
     max-height: none;
-    --webkit-line-clamp: 4;
-    --webkit-box-orient: initial;
-    
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: initial;
+}
+
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.hero-btn:hover {
+    background-color: blue;
+}
+
+html {
+    scroll-behavior: smooth;
 }
