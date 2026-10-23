@@ -99,7 +99,7 @@ footer {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    background-color: #151521;
+    background-color: black;
 }
 
 .anime-card h3 {
@@ -156,6 +156,7 @@ header h1 {
     margin: 0 auto;
 }
 
+
 #search-form {
     display: flex;
     justify-content: center;
@@ -203,4 +204,27 @@ header h1 {
     background-color: blanchedalmond;
     color: white;
     font-size: 16px;
+}
+
+#about {
+    text-align: center;
+    line-height: 1.7;
+    max-width: 750;
+}
+
+.anime-description {
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.anime-description.expanded {
+    display: block
+    overflow: visible;
+    max-height: none;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: initial;
+    
 }

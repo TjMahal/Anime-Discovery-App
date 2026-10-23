@@ -1,0 +1,33 @@
+{
+  "savedAnime": [
+    {
+      "title": "Go! Saitama",
+      "image": "https://media.kitsu.app/anime/45238/poster_image/small-ac7a8841c1f64f5cbd27b0289ba678d8.jpeg",
+      "rating": "75.43",
+      "synopsis": "The short follows Saitama after he discovers a 1-yen (about US$0.01) sale for high-grade hot-pot meat — but the sale ends at 5:00 p.m. that day.\n\n(Source: Anime News Network)",
+      "id": "u5bNP4X1ZHQ"
+    },
+    {
+      "title": "Blue Lock (Zoku-hen)",
+      "image": "https://media.kitsu.app/anime/50211/poster_image/small-a016c59afedd792a2346aae0d0435836.jpeg",
+      "rating": "Not available",
+      "synopsis": "Announced at the \"Blue Lock Egoist Festa 2025\" event: a sequel to Blue Lock VS. U-20 JAPAN.\n\nNote: Title is provisional and subject to change when more info is announced.",
+      "id": "s-IaIZXPMXs"
+    },
+    {
+      "title": "Naruto: Shippuuden",
+      "image": "https://media.kitsu.app/anime/poster_images/1555/small.jpg",
+      "rating": "84.07",
+      "synopsis": "It has been two and a half years since Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training following events which fueled his desire to be stronger. Now Akatsuki, the mysterious organization of elite rogue ninja, is closing in on their grand plan which may threaten the safety of the entire shinobi world.\n\nAlthough Naruto is older and sinister events loom on the horizon, he has changed little in personality—still rambunctious and childish—though he is now far more confident and possesses an even greater determination to protect his friends and home. Come whatever may, Naruto will carry on with the fight for what is important to him, even at the expense of his own body, in the continuation of the saga about the boy who wishes to become Hokage.\n\n(Source: MAL Rewrite)",
+      "id": "BKqCBglItu4"
+    },
+    {
+      "title": "One Punch Man 2nd Season: Ichigeki de Wakaru! Maji Furikaeri!",
+      "image": "https://media.kitsu.app/anime/50239/poster_image/small-7128570b5886a8458cbd09cd315542d4.jpeg",
+      "rating": "Not available",
+      "synopsis": "Commemorative recap of One Punch Man 2nd Season.",
+      "id": "6NH3sGXtuOM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
