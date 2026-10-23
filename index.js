@@ -15,6 +15,7 @@ searchForm.addEventListener("submit", function(event) {
     searchAnime(animeName);
 });
 
+
 async function searchAnime(animeName) {
     animeList.textContent = "Loading anime...";
     try {
@@ -24,6 +25,7 @@ async function searchAnime(animeName) {
         if (!response.ok) {
             throw new Error("Could not fetch anime.");
         }
+
         const result = await response.json();
         console.log(result);
         animeList.textContent = "";
@@ -55,10 +57,13 @@ result.data.forEach(function(anime) {
 
     const animeTitle = document.createElement("h3");
     animeTitle.textContent = animeData.title;
+
     const animeRating = document.createElement("p");
     animeRating.textContent = "Rating: " + animeData.rating;
+
     const animeDescription = document.createElement("p");
     animeDescription.classList.add("anime-description");
+
     animeDescription.textContent = animeData.synopsis;
 
     animeCard.appendChild(animeImage);
@@ -106,6 +111,7 @@ result.data.forEach(function(anime) {
             console.error(error);
         }
     });
+
     animeCard.appendChild(saveButton);
     animeList.appendChild(animeCard);
 });
@@ -157,6 +163,7 @@ const suggestionMessage = document.getElementById("suggestion-message");
 
 suggestionForm.addEventListener("submit", async function(event) {
     event.preventDefault();
+    
     const animeName = suggestionName.value.trim();
     if (animeName === "") {
         suggestionMessage.textContent = "Please enter an anime name.";
